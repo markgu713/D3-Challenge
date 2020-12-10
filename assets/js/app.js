@@ -55,7 +55,7 @@ function makeResponsive() {
             .range([0, width]);
 
         var yScale = d3.scaleLinear()
-            .domain([2, d3.max(healthData, d => +d.healthcare)])
+            .domain([4, d3.max(healthData, d => +d.healthcare)])
             .range([height, 0]);
 
         // Create bottom, left and right axis
